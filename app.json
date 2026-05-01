@@ -1,10 +1,11 @@
-{
+I'm{
   "name": "xylo-md",
   "description": "Advanced WhatsApp Bot with 1000+ commands, AI, games, downloader, moderation and dev tools.",
   "repository": "https://github.com/Mek-d1/XYLO-MD",
   "stack": "heroku-24",
-  "env": {
-    "SESSION_ID": {
+  "env": { brew update
+brew install render
+    "SESSION_ID": {DAVE-S*F=2XJC4CL2OJXG
       "description": "Your session string to connect to WhatsApp",
       "required": true
     },
@@ -15,7 +16,7 @@
   },
   "buildpacks": [
     {
-      "url": "heroku/nodejs"
+      "url": "render workflows init --language node"
     }
   ],
   "keywords": [
