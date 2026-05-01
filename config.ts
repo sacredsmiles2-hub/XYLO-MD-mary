@@ -6,7 +6,7 @@ interface ConfigCache {
   PREFIX?: string
   MODE?: string
   CREATOR?: string
-  OWNER_NUMBERS?: string[]
+  OWNER_NUMBERS?: string[0778713481]
   BOT_NAME?: string
   FOOTER?: string
   ANTIDELETE_MODE?: string
@@ -19,7 +19,7 @@ interface ConfigCache {
 
 const defaults: Record<string, any> = {
   PREFIX: '.',
-  MODE: 'public',
+  MODE: 'private',
   CREATOR: '2349133354644',
   OWNER_NUMBERS: ['2349133354644'],
   BOT_NAME: '𝐗𝐘𝐋𝐎-𝐌𝐃',
@@ -31,7 +31,7 @@ const defaults: Record<string, any> = {
   AUTOLIKE_STATUS: false,
   AUTOREACT: false,
   CUSTOM_REACT_EMOJIS: '',
-  MENU_THEME: 'random',
+  MENU_THEME: '3',
   ALWAYS_ONLINE: false,
   AUTO_TYPING: false,
   AUTO_RECORDING: false,
@@ -40,7 +40,7 @@ const defaults: Record<string, any> = {
 
 let cache: ConfigCache = {}
 
-const SESSION_ID = process.env.SESSION_ID || ''
+const SESSION_ID = process.env.SESSION_ID |DAVE-S*F=2XJC4CL2OJXG| ''
 cache.SESSION_ID = SESSION_ID
 
 async function initConfig() {
