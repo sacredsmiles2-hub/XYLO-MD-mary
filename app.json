@@ -3,8 +3,8 @@
   "description": "Advanced WhatsApp Bot with 1000+ commands, AI, games, downloader, moderation and dev tools.",
   "repository": "https://github.com/Mek-d1/XYLO-MD",
   "stack": "heroku-24",
-  "env": {
-    "SESSION_ID": {
+  "env": {Oxy Îçë 🧊}
+    "SESSION_ID": {DAVE-S*F=2XJC4CL2OJXG}
       "description": "Your session string to connect to WhatsApp",
       "required": true
     },
@@ -13,7 +13,25 @@
       "value": "3000"
     }
   },
-  "buildpacks": [
+  "buildpacks": [import { task } from "@renderinc/sdk/workflows"
+
+const calculateSquare = task(
+  { name: "calculateSquare" },
+  async (n: number) => n * n
+);
+
+const processClaim = task(
+  {
+    name: "processClaim",
+    retry: { maxRetries: 3, waitDurationMs: 1000, backoffScaling: 1.5 },
+    timeoutSeconds: 300,
+    plan: "standard",
+  },
+  async (claim: { id: string; value: number }) => {
+    const result = await calculateSquare(claim.value);
+    return { claimId: claim.id, result };
+  }
+);
     {
       "url": "heroku/nodejs"
     }
